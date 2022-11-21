@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- the css bootstrap link from bootstrap site for online  usage of bootstrap -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!--intenal styling for the elements  -->
+
+    <style>
+        
+     
+          /* css for create button on top */
+        .create{
+        position:relative ; right: 150px;
+        background-color:transparent;
+        margin: 14px;
+        padding: 10px;
+             color: white;
+            border-color: white;
+             border-style:solid;
+             float: right;
+    }
+        
+     /* css for login button on the top */
+        .login{
+            position:relative; right: 150px;
+            background-color:transparent;
+             border: transparent;
+             color: white;
+             float: right;
+             margin: 27px;
+        }
+    
+        /*  card section started   */
+
+        /* css for the card images */
+        .card-img-bottom {
+         color: #fff;
+          height: 10rem;
+           background: url(images/breakfast.png) center no-repeat;
+          background-size: cover;
+             }
+
+       .card-img-lunch{
+        color: #fff;
+          height: 10rem;
+           background: url(images/lunch.png) center no-repeat;
+          background-size: cover;
+
+       }
+
+       .card-img-snacks{
+        color: #fff;
+          height: 10rem;
+           background: url(images/snacks.png) center no-repeat;
+          background-size: cover;
+       }
+      
+
+       .card-img-dinner{
+           color: #fff;
+          height: 10rem;
+           background: url(images/dinner.png) center no-repeat;
+          background-size: cover;}
+
+
+       .card-img-drinks{
+        color: #fff;
+          height: 10rem;
+           background: url(images/drinks.png) center no-repeat;
+          background-size: cover;
+       }
+
+       .card-img-nightlife{
+        color: #fff;
+          height: 10rem;
+           background: url(images/nightlife.png) center no-repeat;
+          background-size: cover;
+
+       }
+    </style>
+</head>
+
+<body>
+  
+<!-- the first grid for logo ,search button, login button and create button  -->
+   
+                                            <!-- start of first grid -->
+<div class="col-lg-1"  style="width: 1263px;">
+ 
+      <!-- Background image div start-->
+  <div  class="bg-image"  style=  "background-image: url('images/wallpaper.png');height: 22rem;">
+   
+
+       <button class="create">create an account</button>
+       <button class="login">login</button>
+   
+       <img src="./images/logo.png" height="30%"  class="img-responsive" style="position:relative; left: 580px; top: 70px;">
+    
+       <h1 style="color:white; text-align:center; position: relative; top: 75px;  "><b>Find the best restaurants,cafes,and bars</b></h1>
+     
+                    <!-- div using flex for the two search dropdown to bring them in a single line -->
+
+                        <!-- start div flex -->
+
+    <div class="d-flex justify-content-center" style="position: relative; top: 100px">
+
+  <!-- start first bootstrap dropdown -->
+      <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="color: #636F88; background-color: white;">
+          please type a location   &nbsp  &nbsp  
+          </button>
+    
+       </div>
+ <!-- end first bootstrap dropdown -->
+  &nbsp    &nbsp   &nbsp   &nbsp   
+
+  <!-- start 2nd bootstrap dropdown -->
+      <div class="dropdown">
+
+     <!-- bootstrap css for the search icon copied from bootstrap -->
+
+    <i class="bi bi-search"></i>
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="color: #636F88; background-color: white; ">
+               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+               <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+               </svg>
+                &nbsp  search for  restaurants  &nbsp &nbsp &nbsp  &nbsp  &nbsp  &nbsp  &nbsp   &nbsp   &nbsp   &nbsp  &nbsp   &nbsp  &nbsp &nbsp &nbsp &nbsp   &nbsp &nbsp &nbsp &nbsp &nbsp 
+         
+            </button>
+    
+      </div>
+  <!-- end of 2nd bootstrap dropdown -->
+
+    </div>
+                             <!-- end div flex -->
+
+  </div>
+<!--background image end  div -->
+
+</div>
+
+                                                  <!-- end of first grid -->
+
+
+
+
+
+
+
+                                        <!-- bootstrap cards starting div -->
+
+<div style="margin: 10px 50px 100px;">
+    <br>
+    <h2 style="color: #192F60; margin-left: 35px;"><b>Quick Searches</b></h2>
+    <br>
+    <h6 style="color:#8C96AB; margin-left: 35px;"><b>Discover restaurants by type of meal</b></h6>
+    <br>
+
+
+    <!-- using 1st flex of bootstrap for even distribution of cards  -->
+    <!-- start of 1st flex -->
+    <div class="d-flex justify-content-evenly">
+ 
+       
+                  <!-- breakfast card -->
+
+
+                  <!-- use of grid for card formation with controlled size-->
+        <div class="card lg-4" style="width: 340px; box-shadow: 0px 3px 6px #00000029;">
+          <div class="row g-0">
+              <div class="col-lg-6">
+
+             <!-- internal styling applied with image as background -->
+
+                      <div class="card-img-bottom">    
+
+                      </div>
+            
+              </div>
+              <div class="col-lg-6">
+                   <div class="card-body">
+                   <h5 class="card-title" style="color:#192F60"><b>Breakfast</b></h5>
+                   <p class="card-text" style="color:#8C96AB;"><b>Start your day with exclusive breakfast options.</b></p>
+                   </div>
+           
+              </div>
+          </div>
+        </div>
+
+
+                    <!-- lunch card -->
+ 
+                    <!-- use of grid for card formation with controlled size-->
+        <div class="card lg-4" style="width: 340px; box-shadow: 0px 3px 6px #00000029;">
+            <div class="row g-0">
+              <div class="col-lg-6">
+
+             <!-- internal styling applied with image as background -->
+
+                       <div class="card-img-lunch">    </div>
+            
+              </div>
+              <div class="col-lg-6">
+                 <div class="card-body">
+                  <h5 class="card-title" style="color:#192F60"><b>Lunch</b></h5>
+                  <p class="card-text" style="color:#8C96AB;"><b>Start your day with exclusive breakfast options.</b></p>
+             
+                 </div>
+           
+              </div>
+            </div>
+        </div>
+
+                       
+                         <!-- snacks card -->
+
+                         <!-- use of grid for card formation with controlled size -->
+        <div class="card lg-4" style="width: 340px; box-shadow: 0px 3px 6px #00000029;">
+            <div class="row g-0">
+              <div class="col-lg-6">
+
+             <!-- internal styling applied with image as background -->
+
+                         <div class="card-img-snacks"> 
+                         </div>
+            
+              </div>
+                  <div class="col-lg-6">
+                     <div class="card-body">
+                        <h5 class="card-title" style="color:#192F60"><b>snacks</b></h5>
+                        <p class="card-text" style="color:#8C96AB;"><b>Start your day with exclusive breakfast options.</b></p>
+             
+                     </div>
+           
+                  </div>
+            </div>
+        </div>
+
+
+
+    </div>
+<!-- end of first flex -->
+
+     <br> <br> 
+
+
+
+   <!-- using 2nd flex of bootstrap for even distribution of cards  -->
+
+   <!-- start of 2nd flex -->
+
+    <div class="d-flex justify-content-evenly">
+
+                     
+                      <!-- dinner card  -->
+
+                      <!-- use of grid for card formation with controlled size-->
+
+        <div class="card lg-4" style="width: 340px; box-shadow: 0px 3px 6px #00000029;">
+            <div class="row g-0">
+              <div class="col-lg-6">
+
+                 <!-- internal styling applied with image as background -->
+
+                       <div class="card-img-dinner">  
+
+                       </div>
+                
+              </div>
+              <div class="col-lg-6">
+                    <div class="card-body">
+                       <h5 class="card-title" style="color:#192F60"><b>Dinner</b></h5>
+                       <p class="card-text" style="color:#8C96AB;"><b>Start your day with exclusive breakfast options.</b></p>
+                 
+                    </div>
+               
+              </div>
+            </div>
+        </div>
+    
+    
+                         <!-- drinks card -->
+
+                         <!-- use of grid for card formation with controlled size -->
+    
+        <div class="card lg-4" style="width: 340px; box-shadow: 0px 3px 6px #00000029;">
+            <div class="row g-0">
+              <div class="col-lg-6">
+
+                 <!-- internal styling applied with image as background -->
+
+                        <div class="card-img-drinks"> 
+                         </div>
+                
+              </div>
+                <div class="col-lg-6">
+                        <div class="card-body">
+                           <h5 class="card-title" style="color:#192F60"><b>Drinks</b></h5>
+                           <p class="card-text" style="color:#8C96AB;"><b>Start your day with exclusive breakfast options.</b></p>
+                 
+                        </div>
+               
+                </div>
+            </div>
+        </div>
+    
+       
+                             <!-- nightlife card -->
+    
+                             <!-- use of grid for card formation with controlled size -->
+        <div class="card lg-4" style="width: 340px; box-shadow: 0px 3px 6px #00000029;">
+            <div class="row g-0">
+              <div class="col-lg-6">
+
+                <!-- internal styling applied with image as background -->
+
+                          <div class="card-img-nightlife">  
+
+                          </div>
+                
+              </div>
+                  <div class="col-lg-6">
+                       <div class="card-body">
+                         <h5 class="card-title" style="color:#192F60"><b>Nightlife</b></h5>
+                         <p class="card-text" style="color:#8C96AB;"><b>Start your day with exclusive breakfast options.</b></p>
+                 
+                       </div>
+               
+                  </div>
+            </div>
+        </div>
+    
+    
+    
+    </div>
+
+      <!-- end of 2nd flex -->
+
+
+</div>
+<!-- bootstrap card ending div -->
+
+
+ <!-- java script link for bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+
+</body>
+</html>
